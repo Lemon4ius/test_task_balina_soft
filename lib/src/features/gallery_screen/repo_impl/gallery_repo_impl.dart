@@ -13,7 +13,7 @@ class GalleryRepoImpl implements GalleryRepo {
     try{
       final response = await _network.dio.post('/image', data: {
         "base64Image": photoInfoModel.base64Image,
-        "date": 232,
+        "date": 232,//TODO не очень понял что бэк планировал принимать
         "lat": photoInfoModel.latitude,
         'lng': photoInfoModel.longitude
       }
